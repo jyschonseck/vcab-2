@@ -1,0 +1,17 @@
+<div id="accueil_0" class="divFond">
+  <video src="vid/fayssal_black.mp4" controls>
+  </video>
+
+  <div id="zoneBas">
+    <div >    </div>
+    <button id="btnNext" class="btnBase" onclick="location.hash='choix';">Next </button>
+  </div>
+</div>
+<script type="text/javascript">
+  $(function() {
+    document.querySelector("video").addEventListener("ended", function() {
+      // $('main').load("html/choix.html");
+      location.hash = 'choix';
+    });
+  });
+</script>

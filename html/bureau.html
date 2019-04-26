@@ -1,0 +1,72 @@
+<div id="ctnBureau" class="divFond">
+  <div id="ctnBureauTitre">
+<h2 id="txtMinistere"></h2>
+<h2 id="txtSujet"></h2>
+    </div>
+  <div id="ctnBtns">
+    <button id="btn_conv" class="btnBase actLglg">Conversation</button>
+    <button id="btn_video" class="btnBase actLglg">Video</button>
+    <button id="btn_interview" class="btnBase actLglg">Interview</button>
+    <button id="btn_memo" class="btnBase actMemo">Memo</button>
+  </div>
+
+  <div id="popActivite" class="popin_modal">
+    <div class="popin_bar"><span id="txtPopinTitre">L'exercice</span><button class="popin_btnClose" onclick="$('.popin_modal').hide(200);">X</button>
+    </div>
+    <div id="ctnActivite">
+    </div>
+
+
+  </div>
+
+  <div id="zoneBas">
+    <button id="btnPrev" class="btnBase" onclick="location.hash='choix';">Back to the ministry </button>
+  </div>
+</div>
+<script type="text/javascript">
+  $(function() {
+   unit = window.location.hash.split("_")[2];
+   ministere = window.location.hash.split("_")[1];
+   console.log("ouverture bureau" + unit + " - " + ministere + " - ");
+
+    $("#popActivite").hide(0);
+    $("#txtMinistere").html(lstSujets[ministere].minist);
+    $("#txtSujet").html(lstSujets[ministere].sujets[unit].titre);
+
+    $("#popActivite").css("padding-top" , $("#ctnBureauTitre").css("height"));
+
+    $(".actLglg").click(function(e) {
+      // mettre data dans sessionSto
+      var exo = e.currentTarget.id.split("_")[1];
+      var urlData = "unit/" + unit + "/" + exo + ".json";
+      console.log(urlData);
+      console.log(ministere);
+      $.ajax({
+        type: 'GET',
+        url: urlData,
+        dataType: 'json',
+        success: function(data) {
+          if (data) {
+            sessionStorage.lglg_data = JSON.stringify(data);
+            $("#ctnActivite").load("lglg/lglg.html");
+            console.log("globish ? " + JSON.stringify(lstSujets[ministere]));
+            // $("#txtPopinTitre").html(lstSujets[ministere].minist + " - " + lstSujets[ministere].sujets[unit].titre);
+             $("#txtPopinTitre").html(exo);
+            $("#popActivite").show(500);
+          }
+        },
+        error: function() {
+          alert("Pour le moment les seules activités sont dans Research & industry/ le premier \"experiments on animals...\" conversation & video...");
+          // location.hash = "choix";
+        }
+      });
+    });
+
+    $(".actMemo").click(function(e){
+    $("#ctnActivite").load("memo/memo.html");
+      $("#txtPopinTitre").html("Memo - " + lstSujets[ministere].minist + " - " + lstSujets[ministere].sujets[unit].titre);
+      $("#popActivite").show(500);
+    });
+
+  });
+</script>

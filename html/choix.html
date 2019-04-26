@@ -1,0 +1,60 @@
+<div id="ctnChoix" class="divFond">
+  <div id="zoneHaut">
+    <button id="btn_eco" class="btnMin"><img src="img/min-eco.png" alt="Economy"></button>
+    <button id="btn_home" class="btnMin"><img src="img/min-home.png" alt="Home"></button>
+    <button id="btn_industry" class="btnMin"><img src="img/min-industry.png" alt="Research & education"></button>
+    <button id="btn_culture" class="btnMin"><img src="img/min-culture.png" alt="Culture & education"></button>
+    <button id="btn_health" class="btnMin"><img src="img/min-health.png" alt="Health"></button>
+  </div>
+
+  <div id="zoneCentre">
+    <div id="PopLstQ" class="popin">
+      <h3>Choose a question</h3>
+      <h4 id="txtDomaine"></h4>
+      <div id="ctnLstQ">
+
+      </div>
+    </div>
+  </div>
+
+  <div id="zoneBas">
+    <button id="btnPrev" class="btnBase" onclick="location.hash='accueil';">Back </button>
+  </div>
+</div>
+
+<script type="text/javascript">
+  $(function() {
+
+    var ministere = "";
+    $("#PopLstQ").hide(0);
+
+    ///******
+    $(".btnMin").click(function(e) {
+      console.log("click minitre" + e.currentTarget.id);
+      $("#PopLstQ").show(500);
+      var ctn = document.getElementById('ctnLstQ');
+      // vider ctn
+      while (ctn.firstChild) {
+        ctn.removeChild(ctn.firstChild);
+      }
+      var nomCourt = e.currentTarget.id.split("_")[1];
+      ministere = nomCourt;
+      console.log("au clic " + ministere);
+      $("#txtDomaine").html(lstSujets[nomCourt].minist);
+      for (var i in lstSujets[nomCourt].sujets) {
+        var bouton = document.createElement("button");
+        bouton.id = "btnSjt_" + ministere + "_" + i;
+        bouton.innerHTML = lstSujets[nomCourt].sujets[i].titre;
+        bouton.onclick = btnSujetClckHdlr;
+        //**** TODO provisoire en attente de suppression definitive dans le jason
+        if ( lstSujets[nomCourt].sujets[i].poubelle){
+          // bouton.disabled = true;
+          bouton.style.color = "#555";
+          bouton.innerHTML += " <span class='remarque'>(à supprimer ?)</span>";
+        }
+        ctn.appendChild(bouton);
+      }
+
+    })
+  })
+</script>
