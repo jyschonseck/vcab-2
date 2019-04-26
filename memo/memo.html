@@ -1,0 +1,65 @@
+<h1>Your memo</h1>
+
+<form name="myform" onSubmit="JavaScript:formSubmit()">
+  <textarea id="taMemo" name="name" rows="32"></textarea>
+</form>
+
+
+<div id="ctnPopupSauveFichier" title="Enregistrer ZZZ"></div>
+
+<script src="memo/tinymce/tinymce.min.js"></script>
+<script type="text/javascript">
+  var lieuLS = "vcab_" + location.hash.split("_")[2] + "_memo";
+  var nouveauDoc = '<h2 class="mceNonEditable">Premiere partie</h2>Texte à remplacer<h2 class="mceNonEditable">Deuxième partie</h2>';
+
+  function formSubmit() {
+    //** fonction déclenché par le save du tinymce
+    //localStorage.setItem(lieuLS, tinymce.get("taMemo").getContent());
+    $('#ctnPopupSauveFichier').dialog('open');
+    downloadFile();
+  }
+
+  $(function() {
+    $("#ctnPopupSauveFichier").dialog({
+      modal: true,
+      autoOpen: false,
+      width: 500,
+      show: {
+        effect: "fade",
+        duration: 333
+      },
+      hide: {
+        effect: "fade",
+        duration: 333
+      },
+      buttons: {
+        "Annuler": function() {
+          $(this).dialog("close");
+        }
+      }
+    });
+    $('#ctnPopupSauveFichier').load('memo/sauvegarde.html');
+
+    tinymce.init({
+      selector: '#taMemo',
+      plugins: "save , lists , print , noneditable",
+      menubar: false,
+      toolbar: 'save | undo redo | styleselect | underline bold italic | bullist numlist | print',
+      branding: false,
+      save_enablewhendirty: false,
+      init_instance_callback: function(editor) {
+        editor.on('change', function(e) {
+          localStorage.setItem(lieuLS, tinymce.get("taMemo").getContent());
+        })
+      }
+    });
+
+    if (localStorage[lieuLS]) {
+      console.log("ya du localStorage");
+      tinymce.get("taMemo").setContent(localStorage[lieuLS]);
+    } else {
+      //*** nouveauDoc
+      tinymce.get("taMemo").setContent(nouveauDoc);
+    }
+  });
+</script>

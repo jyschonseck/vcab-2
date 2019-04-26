@@ -1,0 +1,586 @@
+* {
+  /* box-sizing: content-box; */
+  margin:0;
+  padding: 0;
+}
+
+html{}
+body{}
+#ctnLglg{}
+#cols{}
+#docu, #questionnaire{}
+
+#ctnDroit{}
+#ctnQuestionnaire{}
+#ctnPageQ{}
+
+h4 {
+  margin: 0.5rem 0 0 0.5rem;
+  padding: 0;
+  font-size: 0.9rem;
+}
+
+button {
+  background-color: #fff;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.offScreen {
+  position: absolute;
+  top: -1960px;
+}
+
+/*********************************/
+#cols {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  /* padding-right: 2vw; */
+  /*margin-top: 3em;*/
+}
+
+#docu, #questionnaire {
+  flex: 1;
+}
+
+#docu {
+  margin-right: 2vw;
+}
+
+#questionnaire {
+  margin-left: 2vw;
+}
+
+
+#ctnTitres {
+  font-size: 1rem;
+  border-bottom: .25em solid #28b2aa;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+  min-height: 3.5rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.txtTitrePage {
+  font-weight: 900;
+  font-size: 1.5rem;
+  color: #444;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+#txtSousTitre {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+#ctnLogo {
+  display: flex;
+  flex-direction: row;
+}
+
+.logo {
+  max-height: 2rem;
+  margin: 1rem;
+}
+
+#ctnPageQ {
+  overflow: auto;
+}
+
+/*
+#ctnQuestions{
+  overflow: hidden;
+} */
+/*** consigne prend le style voulu dans l'éditeur...*/
+#ctnConsigne {}
+
+.ctnQuestion input {
+  display: inline;
+}
+
+/***** pour rendre clic possible dans les champ tinymce*/
+.tinyAction {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.tinyAction:hover{
+  font-weight: bolder;
+}
+
+/*****************
+*     OUTILS     *
+*****************/
+#ctnOutils {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  margin-bottom: 0.5rem;
+}
+
+#ctnOutils a {
+  display: inline-block;
+  width: 25%;
+  text-align: center;
+  text-decoration: none;
+  color: #444;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 900;
+  margin-top: 1rem;
+  transition: opacity .25s;
+}
+
+#ctnOutils img {
+  display: block;
+  margin: 0 auto .5em;
+  width: 80%;
+  max-width: 4em;
+}
+
+#ctnOutils span {}
+
+#ctnOutils a:hover {
+  opacity: 0.6;
+}
+
+#ctnOutils a.choisi {
+  background-color: #BDBDBD;
+}
+
+.outilsInactif {
+  opacity: 0;
+  cursor: default;
+}
+
+.ctnClavierClass {}
+
+.ctnClavierClass button {
+  margin: 5px;
+  cursor: pointer;
+  width: 30px;
+}
+
+/*****************
+*   FORMULAIRE   *
+*****************/
+/* onglets */
+#ctnOnglets {
+  border-bottom: .25em solid #28b2aa;
+  margin-bottom: 1rem;
+}
+
+#ctnOnglets>button {
+  display: inline-block;
+  padding: 1em;
+  font-size: .875rem;
+  line-height: 1;
+  text-transform: uppercase;
+  background: #cacaca;
+  color: #fff;
+  font-weight: 900;
+  margin-top: .25rem;
+  /*transition:all .25s ease-out;*/
+  cursor: default;
+}
+
+#ctnOnglets>button.actif {
+  background: #7bd9d4;
+  cursor: pointer;
+}
+
+#ctnOnglets>button.actif:hover {
+  border-top: .25rem solid #7bd9d4;
+  margin-top: 0;
+  opacity: .8;
+}
+
+#ctnOnglets>button.choisi {
+  background: #28b2aa;
+  border-top: .25rem solid #28b2aa;
+  margin-top: 0;
+}
+
+#ctnOnglets>button.choisi:hover {
+  border-color: #28b2aa;
+  opacity: 1;
+}
+
+.ctnQuestion {
+  margin-bottom: 1.5rem;
+  border-left: solid 3px;
+  border-bottom: solid 2px;
+  /*  border-top:solid 3px;
+  border-bottom:solid 1px;*/
+  padding-left: 0.2rem;
+  padding-bottom: 0.2rem;
+}
+
+.txtQuestion {
+  font-size: 1.125rem;
+  margin-bottom: .5em;
+}
+
+.txtCorrection {
+  /* font-size: 1.125rem;
+  font-style: italic; */
+  padding: 0.5rem 0 0 0.5rem;
+}
+
+textarea {
+  background: #fff;
+  border: 1px solid #000;
+  width: 95%;
+  font-size: 1rem;
+  color: #444;
+}
+
+textarea:focus {
+  border-color: #28b2aa;
+  outline: none;
+}
+
+/****************************/
+/****    QCM     ***********/
+.etiquetteBonne {
+  background-color: lightgreen;
+}
+
+.etiquetteFausse {
+  border: solid 1px red;
+}
+
+.QCMprop {
+  padding-left: 2rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.QCMprop .score {
+  margin-left: auto;
+  margin-right: .5rem;
+  font-size: small;
+  font-style: italic;
+}
+
+/****************************/
+/****    qtrou     ***********/
+.saisieBonne {
+  color: green;
+}
+
+.saisieFausse {
+  text-decoration: line-through;
+  color: red;
+}
+
+.txtTrouRep {
+  color: black;
+  font-weight: bold;
+  /* font-style: italic; */
+  background-color: lightgrey;
+}
+
+.txtFb {
+  /* display: inline-block; */
+  /* display: none; */
+  font-style: italic;
+  font-family: monospace;
+  background-color: lightgrey;
+  color: blue;
+}
+
+/* ********************************** */
+/* ***********   qdd : dragdrop  ***** */
+.qddCtnProps {
+  display: flex;
+  flex-direction: row;
+  /* border: solid 1px ; */
+}
+
+.draggabe {
+  border: solid 1px black;
+  margin: 0.2rem;
+  padding: 0.2rem;
+  /* width: 4rem;
+  height: 1.5rem; */
+  background-color: #bbb;
+  display: flex;
+  box-sizing: content-box;
+}
+
+.draggabe::before {
+  content: url(lglg_interface/images/qdd-drag.png);
+}
+
+.draggabe.actif {
+  cursor: move;
+}
+
+.draggabe.correct {
+  border-width: medium;
+  border-color: rgb(25, 150, 68);
+}
+
+.draggabe.faux {
+  border-width: medium;
+  border-color: rgb(150, 36, 25);
+}
+
+.qddCtnCibles {
+  /* border: solid 1px blue; */
+  padding: 0.2rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.qddCtnCibles>div {
+  flex: 0 0 40%;
+  border: solid 1px black;
+  margin: 0;
+}
+
+.droppabe {
+  min-height: 3rem;
+  margin: 0.2rem;
+  border: dotted 1px #888;
+  background-color: #ddd;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.dragSon {
+  width: 4rem;
+  height: 2rem;
+}
+
+.ui-droppable-active {
+  border: solid 2px purple;
+}
+
+.ui-droppable-hover {
+  border: solid 1px red;
+}
+
+.btnSon {
+  width: 2rem;
+  height: 2rem;
+  font-size: 2rem;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.btnSon:hover {
+  color: white;
+}
+
+/****************************/
+.ctnFlexH {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.qScore {
+  font-weight: bold;
+  margin-left: auto;
+  margin-right: .5rem;
+}
+
+.QCMTxtBon {
+  color: green;
+}
+
+/*** AUTO EVAL ***/
+.autoEval {
+  /* display : flex;
+  flex-direction: row; */
+  font-size: 1rem;
+  margin: .25em 0;
+  font-weight: 700;
+  padding: .25em;
+  line-height: 2;
+}
+
+.ctnAE {
+  /* width: 100%; */
+  display: inline-block;
+  vertical-align: middle;
+  width: 8rem;
+  margin-left: 0.3rem;
+}
+
+#txtEvalTitre {
+  /* flex: auto; */
+  font-size: large;
+  white-space: nowrap;
+  align-self: center;
+}
+
+.logoAE {
+  align-self: center;
+  opacity: 0.4;
+}
+
+#maProgress {
+  width: 100%;
+  margin: 0.2rem;
+  height: 2rem;
+}
+
+.btnExtraitVidVo, .btnExtraitVidSt {
+  display: inline-block;
+  vertical-align: middle;
+  width: 2em;
+  height: 2em;
+  margin: .25em .5em .25em 0;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: 50% 50%;
+  transition: opacity .25s;
+}
+
+.btnExtraitVidVo:hover, .btnExtraitVidSt:hover,
+.btnExtraitVidVo:focus, .btnExtraitVidSt:focus {
+  opacity: .5;
+}
+
+.btnExtraitVidVo {
+  background-image: url(lglg_interface/images/extrait.svg);
+}
+
+.btnExtraitVidSt {
+  background-image: url(lglg_interface/images/extrait-.svg);
+}
+
+/*************************
+****   AE  & score***
+**************************/
+.ctnResult {
+  padding: 0 0.5rem;
+  flex: auto;
+  text-align: center;
+}
+
+.progressBar {
+  display: inline-block;
+  width: 4rem;
+  height: 5px;
+  margin: 0 0.3rem 0.2rem 0.3rem;
+  height: 1em !important;
+}
+
+.ui-progressbar {
+  background: #ddd !important;
+  border-radius: 0 !important;
+  border: none !important;
+  /* height: 5rem !important; */
+}
+
+.ui-progressbar-value {
+  background: #28b2aa !important;
+  border-radius: 0 !important;
+  border: none !important;
+}
+
+.clicable {
+  cursor: pointer;
+}
+
+.progressbar-label {
+  width: 100%;
+  text-align: center !important;
+  font-size: 8px !important;
+  margin-bottom: 0.8em;
+  background: none !important;
+}
+
+#ctnInfosResult {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  border-top: .25em solid #28b2aa;
+}
+
+/* ****************************** */
+/***************************/
+/***** en dessou sde 720 on reduit les tailles de caractères et margin, */
+@media screen and (max-width:760px) {
+  .txtTitrePage {
+    font-weight: bold;
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+  }
+
+  .txtQuestion {
+    font-size: 1rem;
+    margin-bottom: .25rem;
+  }
+
+  .txtCorrection {
+    font-size: 1rem;
+  }
+
+  #ctnOnglets>div {
+    padding: 0.5rem;
+    font-size: .75rem;
+    line-height: 1;
+    color: #fff;
+    font-weight: bold;
+  }
+
+  #ctnOutils a {
+    margin-top: 0;
+  }
+
+  #ctnOutils img {
+    width: 60%;
+  }
+}
+
+/***** en dessou sde 640 on passe en une seule colonne*/
+@media screen and (max-width:639px) {
+  #cols {
+    display: block;
+  }
+
+  #ctnMedia {
+    margin-bottom: 0.25em;
+  }
+
+  #ctnOutils span {
+    display: none;
+  }
+
+  body.page h2 {
+    text-align: left;
+  }
+
+  #ctnOutils img {
+    max-width: 2.5rem;
+  }
+
+  #ctnOutils {
+    margin-bottom: 0.25rem
+  }
+
+  #ctnPageQ {
+    /* max-height: none !important; */
+  }
+}

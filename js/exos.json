@@ -1,0 +1,173 @@
+{
+  "eco": {
+    "minist": "Economy",
+    "nomCourt": "eco",
+    "vignette": "min-eco.png",
+    "sujets": {
+      "6": {
+        "titre": "Should the rail system be managed once again by the State? ",
+        "unit": "6",
+        "poubelle": false
+      },
+      "15": {
+        "titre": "Should people work longer to solve retirementfunding problems?",
+        "unit": "15",
+        "poubelle": true
+      },
+      "16": {
+        "titre": "Should small British businesses that deal with fair trade get tax breaks?",
+        "unit": "16",
+        "poubelle": false
+      },
+      "17": {
+        "titre": "Should the government do more to eliminate gender bias in male-dominated sectors?",
+        "unit": "17",
+        "poubelle": false
+      }
+    }
+  },
+  "home": {
+    "minist": "Home",
+    "nomCourt": "home",
+    "vignette": "min-home.png",
+    "sujets": {
+      "3": {
+        "titre": "Should other penalties than prison be imposed to minor offenders ?",
+        "unit": "3",
+        "poubelle": false
+      },
+      "5": {
+        "titre": "Should funding for street video surveillance be increased to curb crime down?",
+        "unit": "5",
+        "poubelle": true
+      },
+      "9": {
+        "titre": "Should the ministry support the plan to implement a compulsory biometric ID card?",
+        "unit": "9",
+        "poubelle": true
+      },
+      "18": {
+        "titre": "Should the government issue a law to introduce affirmative action in Great Britain to promote ethnic minorities and overcome racial divide in the country?",
+        "unit": "18",
+        "poubelle": false
+      },
+      "20": {
+        "titre": "Should there be a law to protect individuals' rights to their own image?",
+        "unit": "20",
+        "poubelle": false
+      },
+      "26": {
+        "titre": "Should security measures be imposed on social networking sites in order to better protect children from sexual predators?",
+        "unit": "26",
+        "poubelle": true
+      },
+      "28": {
+        "titre": "Should political parties promoting racialist ideas be censored ?",
+        "unit": "28",
+        "poubelle": false
+      }
+    }
+  },
+  "industry": {
+    "minist": "Research & industry",
+    "nomCourt": "industry",
+    "vignette": "min-industry.png",
+    "sujets": {
+      "1": {
+        "titre": "Should the government ban experiments on animals in the pharmaceutical industry?",
+        "titreCourt": "experiment_on_animals",
+        "unit": "1",
+        "poubelle": true
+      },
+      "8": {
+        "titre": "Should the government continue to finance road infrastructure when the aim is to reduce road congestion?",
+        "unit": "8",
+        "poubelle": true
+      },
+      "21": {
+        "titre": "Should the police be given additional powers to impose curfews on youths under the age of 21 across entire districts?",
+        "unit": "21",
+        "poubelle": false
+      },
+      "24": {
+        "titre": "Should the national DNA database be expanded to the entire population?",
+        "unit": "24",
+        "poubelle": true
+      }
+    }
+  },
+  "culture": {
+    "minist": "Culture & education",
+    "nomCourt": "culture",
+    "vignette": "min-culture.png",
+    "sujets": {
+      "4": {
+        "titre": "Should tougher laws, including prison sentences for parents, be implemented to reduce truancy?",
+        "unit": "4",
+        "poubelle": false
+      },
+      "11": {
+        "titre": "Should public money be used to protect Britain's national cultural heritage? ",
+        "unit": "11",
+        "poubelle": true
+      },
+      "12": {
+        "titre": "Should extra government funding be provided to deal with the education crisis? ",
+        "unit": "12",
+        "poubelle": true
+      },
+      "13": {
+        "titre": "Should the government help British students to finance their studies ?",
+        "unit": "13",
+        "poubelle": true
+      },
+      "14": {
+        "titre": "Should the government reconsider policies for the integration of deaf children into local schools ?",
+        "unit": "14",
+        "poubelle": false
+      },
+      "22": {
+        "titre": "Should the Exeter University Guild of Students be forced to revoke its decision to ban the Christian Union?",
+        "unit": "22",
+        "poubelle": true
+      },
+      "23": {
+        "titre": "Should the state support the work of graffiti artists",
+        "unit": "23",
+        "poubelle": true
+      },
+      "29": {
+        "titre": "Should the government make sex and relationship education compulsory in all schools in order to cut teenage pregnancy rates?",
+        "unit": "29",
+        "poubelle": true
+      }
+    }
+  },
+  "health": {
+    "minist": "Health",
+    "nomCourt": "health",
+    "vignette": "min-health.png",
+    "sujet": {
+      "2": {
+        "titre": "Should cannabis use be depenalised?",
+        "unit": "2",
+        "poubelle": false
+      },
+      "10": {
+        "titre": "Should the government subsidize childcare facilities to allow mothers to go back to work?",
+        "unit": "10",
+        "poubelle": false
+      },
+      "19": {
+        "titre": "Should genetic profiling be prohibited when it is not medically essential?",
+        "unit": "19",
+        "poubelle": false
+      },
+      "27": {
+        "titre": "To what extent should the right to refuse treatment be granted to British citizens?",
+        "unit": "27",
+        "poubelle": true
+      }
+    }
+  }
+}
