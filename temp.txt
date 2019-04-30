@@ -1,0 +1,8 @@
+<p>&nbsp;</p>
+<ul>
+<li><span id="page_0" class="tinyAction" style="font-size: large;">Page 1 : TEST YOUR COMPREHENSION</span></li>
+<li><span id="page_1" class="tinyAction" style="font-size: large;">Page&nbsp;2 : IMPROVE YOUR VOCABULARY</span></li>
+<li><span id="page_2" class="tinyAction" style="font-size: large;">Page&nbsp;3 : RECOGNIZE WORDS IN CONTEXT</span></li>
+<li><span id="page_3" class="tinyAction" style="font-size: large;">Page&nbsp;4 : LIST ARGUMENTS</span></li>
+<li><span id="page_4" class="tinyAction" style="font-size: large;">Page&nbsp;5 : BUILD AN ORAL SUMMARY</span></li>
+</ul>
