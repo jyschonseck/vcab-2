@@ -162,3 +162,10 @@ video {
   margin:0.5rem;
   padding: 0.5rem;
 }
+
+#zoneInfo{
+  background-color: white;
+  padding: 2rem;
+  margin: 3rem;
+  border-radius: 2rem;
+}

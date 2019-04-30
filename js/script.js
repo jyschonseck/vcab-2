@@ -36,7 +36,12 @@ function loadPage(page) {
     page = pageT[0];
   }
 
-  $('main').load("html/" + page + ".html");
+  $('main').load("html/" + page + ".html", function(){
+        //** pour info
+        console.log("load infos");
+        $("#zoneInfo").load("html/infos.html");
+  });
+
 }
 
 function btnSujetClckHdlr(e) {

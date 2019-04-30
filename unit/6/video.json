@@ -1,0 +1,365 @@
+{
+  "titre": "vcab2-unit-06-video",
+  "sousTitre": "Video",
+  "consigne": "<p>&nbsp;</p><p>&nbsp;</p>",
+  "videoUrl": "https://rpn-langues.univ-lille.fr/vcab2/_res/unit-06/video.mp4",
+  "videoType": "0",
+  "btnOutil": {
+    "format": 1,
+    "liste": [{
+      "etiquette": "",
+      "fonction": "--"
+    }, {
+      "etiquette": "",
+      "fonction": "--"
+    }, {
+      "etiquette": "",
+      "fonction": "--"
+    }, {
+      "etiquette": "",
+      "fonction": "--"
+    }, {
+      "etiquette": "",
+      "fonction": "--"
+    }]
+  },
+  "clavier": "",
+  "interface": {
+    "couleur1": "#944547",
+    "ratio": "3",
+    "nav1": "Menu"
+  },
+  "scenario": {
+    "accesQ": "0",
+    "verrCorr": "0",
+    "qoAccesC": "3",
+    "msgAE": "",
+    "scormScoreRaw": "rep",
+    "evalType": "S"
+  },
+  "pages": [{
+    "titre": "Placement test",
+    "questions": [{
+      "type": "qo",
+      "titreQ": "",
+      "txtQuestion": "<p>Write&nbsp; key words and key arguments</p>",
+      "extraitQuestion": {
+        "debut": "0",
+        "fin": "0"
+      },
+      "txtCorrection": "",
+      "extraitCorrection": {
+        "debut": "0",
+        "fin": "0",
+        "masqueST": false
+      },
+      "qcu": false,
+      "correction": true
+    }]
+  }, {
+    "titre": "activity 1",
+    "questions": [{
+      "type": "qdd",
+      "titreQ": "",
+      "txtQuestion": "<p>Match words and definitions.</p>",
+      "extraitQuestion": {
+        "debut": "0",
+        "fin": "0"
+      },
+      "txtCorrection": "<p><strong>What you find in a station</strong> :&nbsp;</p><p>tracks,&nbsp;platform,&nbsp;left-luggage office,&nbsp;waiting-room</p><p><strong>Verbs linked to the rail service</strong></p><p>travel,&nbsp;make a journey,&nbsp;expect,&nbsp;ride</p><p><strong>Trains can be...</strong></p><p>on time,&nbsp;delayed,&nbsp;cancelled,&nbsp;reliable</p>",
+      "extraitCorrection": {
+        "debut": "0",
+        "fin": "0",
+        "masqueST": false
+      },
+      "qcu": true,
+      "correction": true,
+      "propositions": [{
+        "type": "s",
+        "son": "https://rpn-langues.univ-lille.fr/vcab2/_res/unit-06/video-2-01.mp3",
+        "reponseCorrecte": "1",
+        "score": "1",
+        "id": "3"
+      }, {
+        "type": "s",
+        "son": "https://rpn-langues.univ-lille.fr/vcab2/_res/unit-06/video-2-02.mp3",
+        "reponseCorrecte": "1",
+        "score": "1",
+        "id": "7"
+      }, {
+        "type": "s",
+        "son": "https://rpn-langues.univ-lille.fr/vcab2/_res/unit-06/video-2-03.mp3",
+        "reponseCorrecte": "1",
+        "score": "1",
+        "id": "2"
+      }, {
+        "type": "s",
+        "son": "https://rpn-langues.univ-lille.fr/vcab2/_res/unit-06/video-2-04.mp3",
+        "reponseCorrecte": "1",
+        "score": "1",
+        "id": "1"
+      }, {
+        "type": "s",
+        "son": "https://rpn-langues.univ-lille.fr/vcab2/_res/unit-06/video-2-05.mp3",
+        "reponseCorrecte": "2",
+        "score": "1",
+        "id": "5"
+      }, {
+        "type": "s",
+        "son": "https://rpn-langues.univ-lille.fr/vcab2/_res/unit-06/video-2-06.mp3",
+        "reponseCorrecte": "2",
+        "score": "1",
+        "id": "4"
+      }, {
+        "type": "s",
+        "son": "https://rpn-langues.univ-lille.fr/vcab2/_res/unit-06/video-2-07.mp3",
+        "reponseCorrecte": "2",
+        "score": "1",
+        "id": "6"
+      }, {
+        "type": "s",
+        "son": "https://rpn-langues.univ-lille.fr/vcab2/_res/unit-06/video-2-08.mp3",
+        "reponseCorrecte": "2",
+        "score": "1",
+        "id": "8"
+      }, {
+        "type": "s",
+        "son": "https://rpn-langues.univ-lille.fr/vcab2/_res/unit-06/video-2-09.mp3",
+        "reponseCorrecte": "3",
+        "score": "1",
+        "id": "9"
+      }, {
+        "type": "s",
+        "son": "https://rpn-langues.univ-lille.fr/vcab2/_res/unit-06/video-2-10.mp3",
+        "reponseCorrecte": "3",
+        "score": "1",
+        "id": "10"
+      }, {
+        "type": "s",
+        "son": "https://rpn-langues.univ-lille.fr/vcab2/_res/unit-06/video-2-11.mp3",
+        "reponseCorrecte": "3",
+        "score": "1",
+        "id": "11"
+      }, {
+        "type": "s",
+        "son": "https://rpn-langues.univ-lille.fr/vcab2/_res/unit-06/video-2-12.mp3",
+        "reponseCorrecte": "3",
+        "score": "1",
+        "id": "12"
+      }],
+      "cibles": [{
+        "titre": "What you find in a station",
+        "id": "1"
+      }, {
+        "titre": "Verbs linked to the rail service",
+        "id": "2"
+      }, {
+        "titre": "Trains can be...",
+        "id": "3"
+      }],
+      "scoreActif": true,
+      "nbCibL": "1"
+    }]
+  }, {
+    "titre": "Activity 2",
+    "questions": [{
+      "type": "qdd",
+      "titreQ": "",
+      "txtQuestion": "<p>Put the segments in the right order</p>",
+      "extraitQuestion": {
+        "debut": "0",
+        "fin": "0"
+      },
+      "txtCorrection": "<p>Staff did make...</p>",
+      "extraitCorrection": {
+        "debut": "0",
+        "fin": "0",
+        "masqueST": false
+      },
+      "qcu": false,
+      "correction": true,
+      "propositions": [{
+        "type": "s",
+        "son": "https://rpn-langues.univ-lille.fr/vcab2/_res/unit-06/video-3-1a.mp3",
+        "reponseCorrecte": "1",
+        "score": "1",
+        "id": "1"
+      }, {
+        "type": "s",
+        "son": "https://rpn-langues.univ-lille.fr/vcab2/_res/unit-06/video-3-1b.mp3",
+        "reponseCorrecte": "2",
+        "score": "1",
+        "id": "2"
+      }, {
+        "type": "s",
+        "son": "https://rpn-langues.univ-lille.fr/vcab2/_res/unit-06/video-3-1c.mp3",
+        "reponseCorrecte": "3",
+        "score": "1",
+        "id": "3"
+      }, {
+        "type": "s",
+        "son": "https://rpn-langues.univ-lille.fr/vcab2/_res/unit-06/video-3-1d.mp3",
+        "reponseCorrecte": "4",
+        "score": "1",
+        "id": "4"
+      }, {
+        "type": "s",
+        "son": "https://rpn-langues.univ-lille.fr/vcab2/_res/unit-06/video-3-1e.mp3",
+        "reponseCorrecte": "5",
+        "score": "1",
+        "id": "5"
+      }],
+      "cibles": [{
+        "titre": "1",
+        "id": "1"
+      }, {
+        "titre": "2",
+        "id": "2"
+      }, {
+        "titre": "3",
+        "id": "3"
+      }, {
+        "titre": "4",
+        "id": "4"
+      }, {
+        "titre": "5",
+        "id": "5"
+      }],
+      "scoreActif": true,
+      "nbCibL": "5"
+    }, {
+      "type": "qdd",
+      "titreQ": "",
+      "txtQuestion": "<p>Put the segments in the right order</p>",
+      "extraitQuestion": {
+        "debut": "0",
+        "fin": "0"
+      },
+      "txtCorrection": "",
+      "extraitCorrection": {
+        "debut": "0",
+        "fin": "0",
+        "masqueST": false
+      },
+      "qcu": false,
+      "correction": true,
+      "propositions": [{
+        "type": "s",
+        "son": "https://rpn-langues.univ-lille.fr/vcab2/_res/unit-06/video-3-2a.mp3",
+        "reponseCorrecte": "1",
+        "score": "1",
+        "id": "1"
+      }, {
+        "type": "s",
+        "son": "https://rpn-langues.univ-lille.fr/vcab2/_res/unit-06/video-3-2b.mp3",
+        "reponseCorrecte": "2",
+        "score": "1",
+        "id": "2"
+      }, {
+        "type": "s",
+        "son": "https://rpn-langues.univ-lille.fr/vcab2/_res/unit-06/video-3-2c.mp3",
+        "reponseCorrecte": "3",
+        "score": "1",
+        "id": "3"
+      }, {
+        "type": "s",
+        "son": "https://rpn-langues.univ-lille.fr/vcab2/_res/unit-06/video-3-2d.mp3",
+        "reponseCorrecte": "4",
+        "score": "1",
+        "id": "4"
+      }, {
+        "type": "s",
+        "son": "https://rpn-langues.univ-lille.fr/vcab2/_res/unit-06/video-3-2e.mp3",
+        "reponseCorrecte": "5",
+        "score": "1",
+        "id": "5"
+      }],
+      "cibles": [{
+        "titre": "1",
+        "id": "1"
+      }, {
+        "titre": "2",
+        "id": "2"
+      }, {
+        "titre": "3",
+        "id": "3"
+      }, {
+        "titre": "4",
+        "id": "4"
+      }, {
+        "titre": "5",
+        "id": "5"
+      }],
+      "scoreActif": true,
+      "nbCibL": "5"
+    }, {
+      "type": "qdd",
+      "titreQ": "",
+      "txtQuestion": "<p>Put the segments in the right order</p>",
+      "extraitQuestion": {
+        "debut": "0",
+        "fin": "0"
+      },
+      "txtCorrection": "",
+      "extraitCorrection": {
+        "debut": "0",
+        "fin": "0",
+        "masqueST": false
+      },
+      "qcu": false,
+      "correction": true,
+      "propositions": [{
+        "type": "s",
+        "son": "https://rpn-langues.univ-lille.fr/vcab2/_res/unit-06/video-3-3a.mp3",
+        "reponseCorrecte": "1",
+        "score": "1",
+        "id": "1"
+      }, {
+        "type": "s",
+        "son": "https://rpn-langues.univ-lille.fr/vcab2/_res/unit-06/video-3-3b.mp3",
+        "reponseCorrecte": "2",
+        "score": "1",
+        "id": "2"
+      }, {
+        "type": "s",
+        "son": "https://rpn-langues.univ-lille.fr/vcab2/_res/unit-06/video-3-3c.mp3",
+        "reponseCorrecte": "3",
+        "score": "1",
+        "id": "3"
+      }, {
+        "type": "s",
+        "son": "https://rpn-langues.univ-lille.fr/vcab2/_res/unit-06/video-3-3d.mp3",
+        "reponseCorrecte": "4",
+        "score": "1",
+        "id": "4"
+      }, {
+        "type": "s",
+        "son": "https://rpn-langues.univ-lille.fr/vcab2/_res/unit-06/video-3-3e.mp3",
+        "reponseCorrecte": "5",
+        "score": "1",
+        "id": "5"
+      }],
+      "cibles": [{
+        "titre": "1",
+        "id": "1"
+      }, {
+        "titre": "2",
+        "id": "2"
+      }, {
+        "titre": "3",
+        "id": "3"
+      }, {
+        "titre": "4",
+        "id": "4"
+      }, {
+        "titre": "5",
+        "id": "5"
+      }],
+      "scoreActif": true,
+      "nbCibL": "5"
+    }]
+  }],
+  "moduleId": "vcab2-unit-06-video",
+  "tempsPon": 1556617996000,
+  "sousTitrage1": ""
+}
